@@ -367,3 +367,136 @@ Settings ONLY:
 
 ### Frozen Section Scenario Schema
 
+
+{
+"id": "frozen_case_5",
+"specimen": "thyroid nodule",
+"gross": ["tan-white nodule", "firm", "ill-defined"],
+"micro": ["follicular pattern", "microfollicles", "no clear invasion"],
+"question": "What is the safest frozen-section impression?",
+"options": ["Benign", "Malignant", "Follicular neoplasm", "Defer to permanent"],
+"correct": "Follicular neoplasm",
+"rationale": "Follicular carcinoma requires invasion; cannot be determined at frozen."
+}
+
+
+### Grossing Plan Schema
+
+{
+"id": "gross_plan_colon",
+"organ": "colon",
+"lesion": "mass",
+"recommended_cassettes": [
+"Lesion: full thickness",
+"Margins: proximal, distal",
+"Adjacent mucosa",
+"Lymph nodes"
+]
+}
+
+
+### Pattern Recognition Entity
+
+
+
+{
+"id": "spindle_cell_pattern",
+"name": "Spindle cell pattern",
+"associated_differentials": [
+"Sarcoma",
+"Schwannoma",
+"Fibromatosis"
+],
+"notes": "Use architecture + stroma + clinical location"
+}
+
+
+---
+
+# **11. SCREEN INVENTORY & WIREFRAMES**
+
+### HOME  
+Modules: Frozens • Grossing • Processing • Patterns • Organ Systems • Pitfalls • Integration • Cases • Assessment
+
+### MODULE OVERVIEW  
+Shows module summary + subsections + Quick Quiz
+
+### LESSON PAGE  
+- Illustrated diagrams  
+- Key pitfalls  
+- Stepwise reasoning charts  
+- Synthetic histology icons  
+
+### CASE ENGINE  
+- Frozen → Gross → Micro → Call  
+- Immediate feedback + rationale  
+
+### ASSESSMENT  
+- MCQ + case-based  
+- Session-only score  
+
+### SETTINGS  
+- Dark/light  
+- About  
+- Disclaimer  
+
+---
+
+# **12. COPY & CONTENT KIT**
+
+Examples:
+- “If you are unsure: **DEFER**, don’t guess.”  
+- “Margins start with orientation: ink BEFORE sectioning.”  
+- “Frozen artifacts often exaggerate atypia—don’t overcall.”  
+- “Architecture is more reliable than cytology at frozen.”  
+- “Sampling is the single most important grossing decision.”  
+
+Glossary:
+- Microfollicles, desmoplasia, cautery artifact, field effect, radial sectioning, etc.
+
+---
+
+# **13. CREATOR-SIDE A/B TESTING**
+(No in-app tracking.)
+
+Ideas:
+- Compare tile-based vs flowchart-based frozen algorithms  
+- Evaluate which patterns are hardest (e.g., spindle vs epithelioid)  
+- Test artifact recognition difficulty  
+
+---
+
+# **14. QA CHECKLIST**
+- Frozen logic accurate  
+- Grossing recommendations conceptually correct  
+- Pathology patterns correct  
+- Organ-specific differentials accurate  
+- No clinical management advice  
+- No PHI or real images  
+
+---
+
+# **15. ROADMAP**
+
+- M0: Frozen Basics + Grossing  
+- M1: System Pathology Modules  
+- M2: Pattern Mastery  
+- M3: Integration + Pitfalls  
+- M4: 100+ Case Library  
+
+---
+
+# **ACCEPTANCE CRITERIA**
+
+- Full frozen-section + surgical pathology curriculum  
+- Offline, dark-mode, mobile-first  
+- No tracking  
+- Synthetic-only icons & diagrams  
+- Pattern-based and high-yield  
+- Clear, structured, trainee-friendly  
+
+---
+
+## **NOW GENERATE**
+
+Using this template, generate the full **Surgical Path Master** educational platform deliverables in the exact Output Format required, following all constraints.
